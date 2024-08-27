@@ -1,11 +1,11 @@
 
 
-### GaugeMeter para Jitsi:
+# GaugeMeter para Jitsi:
 
 
-### Modulos adicionados:
+## Modulos adicionados:
 
-## React Gauge Chart 
+### React Gauge Chart 
 Para instalar e usar o React Gauge Chart em seu projeto React com TypeScript, siga estes passos:
 
 1. Instale o React Gauge Chart: No terminal, navegue até o diretório do seu projeto e execute:
@@ -34,7 +34,7 @@ const App: React.FC = () => {
 export default App;
 ~~~
 
-## React Progress Bar
+### React Progress Bar
 
 Para instalar e usar o react-progress-bar em um projeto React com TypeScript, siga estes passos:
 
