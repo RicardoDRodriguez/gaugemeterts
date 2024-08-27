@@ -95,7 +95,7 @@ import ProgressBar from '@ramonak/react-progress-bar';
 const MyProgressBar: React.FC = () => {
   return (
     <div>
-      <h1>Minha Barra de Progresso</h1>
+      <h1>Teste para Minha Barra de Progresso</h1>
       <ProgressBar completed={60} />
     </div>
   );

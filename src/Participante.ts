@@ -4,7 +4,7 @@ class Participante {
     sequencia: number;
     nome: string;
     avatar: string;
-    entradaNaSala: Date;
+    entradaNaSala: number;
     tempoDeFala: number;
     fatorRiquezaAbsoluta: number;
     tempoPresenca: number;
@@ -21,7 +21,7 @@ class Participante {
       sequencia: number,
       nome: string,
       avatar: string,
-      entradaNaSala: Date,
+      entradaNaSala: number,
       tempoDeFala: number,
       tempoPresenca: number
     ) {
