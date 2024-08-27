@@ -62,4 +62,25 @@ const MyProgressBar: React.FC = () => {
 export default MyProgressBar
 ~~~
 
+### Alterar os arquivos no GINI
+
+a. types.ts: Local=> react\features\base\participants\types.ts
+
+~~~TypeScript
+
+export interface IGiniParticipant extends IParticipant {
+    entradaNaSala?: number;
+    tempoDeFala?: number;
+    fatorRiquezaAbsoluta?: number;
+    tempoPresenca?: number;
+    fatorTempoPresenca?: number;
+    fatorAcumuladoPresenca?: number;
+    populacaoAcumulada?: number;
+    percentualAcumuloFala?: number;
+    proporcaoAcumuladaPopulacao?: number;
+    fatorAcumuladoCurvaLorenz?: number;
+}
+
+~~~
+
 

@@ -1,28 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
-
+import Participant from "./Participante"
 import DataBaseForGauge from './DataBaseForGauge';
 
 const database = new DataBaseForGauge();
-
-interface Participant {
-    sala: string;
-    id: number;
-    sequencia: number;
-    nome: string;
-    avatar: string;
-    entradaNaSala: number;
-    tempoDeFala: number;
-    fatorRiquezaAbsoluta: number;
-    tempoPresenca: number;
-    fatorTempoPresenca: number;
-    fatorAcumuladoPresenca: number;
-    populacaoAcumulada: number;
-    percentualAcumuloFala: number;
-    proporcaoAcumuladaPopulacao: number;
-    fatorAcumuladoCurvaLorenz: number;
-  
-}
 
 const AvatarProgress: React.FC = () => {
   const [participantsProgress, setParticipantsProgress] = useState<Participant[]>([]);
@@ -52,7 +33,7 @@ const AvatarProgress: React.FC = () => {
     <div>
       {participantsProgress.map((participant) => (
         <div key={participant.id}>
-          <span style={{ marginRight: '10px' }}>{participant.nome}</span>
+          <span style={{ marginRight: '10px' }}>{participant.displayName}</span>
           <ProgressBar
             completed={participant.percentualAcumuloFala.toFixed(1)}
             customLabel={`${participant.percentualAcumuloFala.toFixed(1)}%`}
