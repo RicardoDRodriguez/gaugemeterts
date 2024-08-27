@@ -2,6 +2,8 @@
 
 # GaugeMeter para Jitsi:
 
+## Autor
+   - [Ricardo Rodriguez] (mailto: ricardo.rodriguez@uniriotec.br)
 
 ## Modulos adicionados:
 
@@ -64,7 +66,7 @@ export default MyProgressBar
 
 ### Alterar os arquivos no GINI
 
-a. types.ts: Local=> react\features\base\participants\types.ts
+- a. types.ts: Local=> react\features\base\participants\types.ts
 
 ~~~TypeScript
 
@@ -83,4 +85,10 @@ export interface IGiniParticipant extends IParticipant {
 
 ~~~
 
+- b. Criar o diretorio gaugemeter em react\features\base\gaugemeter inserindo os arquivos abaixo:
+      1. AvatarProgress.css
+      2. AvatarProgress.tsx
+      3. DataBaseForGauge.ts
+      4. LiveGaugeChart.tsx
+      5. Participante.ts
 
