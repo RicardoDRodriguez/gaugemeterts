@@ -44,7 +44,7 @@ Instale o react-progress-bar: No terminal, navegue até o diretório do seu proj
 npm install @ramonak/react-progress-bar
 ~~~
 
-Crie um componente de barra de progresso: Crie um novo componente ou edite um existente para incluir a barra de progresso. Aqui está um exemplo simples:
+Crie um componente de barra de progresso ou edite um existente para incluir a barra de progresso. Aqui está um exemplo simples:
 
 ~~~TypeScript
 import React from 'react';
