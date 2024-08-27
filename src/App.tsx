@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import GaugeChart from 'react-gauge-chart';
+import LiveGaugeChart from './LiveGaugeChart';
 import ProgressBar from '@ramonak/react-progress-bar';
 import AvatarProgress from './AvatarProgress'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,21 +29,19 @@ function App() {
       {/* Linha para LiveGaugeChart */}
       <Row className="justify-content-md-center">
         <Col md={6} className="text-center">
-        <div>
-      <h1>Meu Gauge Chart</h1>
-      <GaugeChart id="gauge-chart1" percent={0.65} />
-    </div>
+          <div>
+          <LiveGaugeChart />
+          </div>
         </Col>
       </Row>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
-
+               
 
       {/* Linha para AvatarProgress */}
       <Row className="justify-content-md-center">
-        <Col md={6} className="text-center">
+        <Col md={6} className="justify-content-md-center">
         <AvatarProgress />
         </Col>
       </Row>
