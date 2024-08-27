@@ -1,4 +1,8 @@
 
+
+### GaugeMeter para Jitsi:
+
+
 ### Modulos adicionados:
 
 ## React Gauge Chart 
